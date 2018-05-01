@@ -1,0 +1,39 @@
+@ all
+------------------------------------
+
+header, menu, footer
+    width: 100% of screen/width
+
+header
+    height: 100px
+    above: menu 0px
+
+menu
+    height: 50px
+    above: content 0px
+
+footer
+    height: > 100px
+
+content
+    inside: screen 0px left
+
+
+
+@ desktop, tablet
+-----------------------------------
+
+side-panel
+    width: 300px
+    below: menu 0px
+    inside: screen 0px right
+    near: content 10px right
+
+@ mobile
+-----------------------------------
+side-panel, content
+    width: 100% of screen/width
+
+side-panel
+    below: content 5px
+

@@ -1,0 +1,22 @@
+{
+  "name": "galen-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revivui/galen-ui.git"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/revivui/galen-ui/issues"
+  },
+  "homepage": "https://github.com/revivui/galen-ui#readme",
+  "devDependencies": {
+    "galenframework-cli": "^2.3.6"
+  }
+}

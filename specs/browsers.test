@@ -1,0 +1,28 @@
+@@ set
+    domain  https://netlify-gatsby-cms.netlify.com
+
+@@ parameterized
+    | browser   | tags      |
+    | phantomjs | phantomjs |
+    | chrome    | chrome    |
+    | firefox   | firefox   |
+@@ parameterized
+    | device      | size      | tags    |
+    | mobile320   | 320x480   | mobile  |
+    | mobile375   | 375x667   | mobile  |
+    | mobile414   | 414x736   | mobile  |
+    | mobile480   | 480x480   | mobile  |
+    | mobile600   | 600x480   | mobile  |
+    | tablet640   | 640x800   | tablet  |
+    | tablet768   | 768x1024  | tablet  |
+    | tablet800   | 800x1024  | tablet  |
+    | tablet1024  | 1024x768  | tablet  |
+    | desktop1024 | 1024x920  | desktop |
+    | desktop1224 | 1224x1024 | desktop |
+    | deskto1280  | 1280x800  | desktop |
+    | desktop1824 | 1824x1024 | desktop |
+    | desktop1920 | 1920x1080 | desktop |
+@@ groups mobile, tablet, desktop, phantomjs, chrome, firefox
+HomePage on ${device} device in ${browser} browser
+    selenium ${browser} ${domain} ${size}
+        check homepage.gspec --include "${tags}"
